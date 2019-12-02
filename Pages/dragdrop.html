@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>drag&drop</title>
+<link href="..\Media\logo.png" rel="icon" />
+
+
+<link rel="stylesheet" href="..\dist/css/bootstrap.min.css" >
+<link rel="stylesheet" href="..\style.css" >
+
+<style>   
+</style>
+</head>
+<body> 
+    <h3 class="display-4 py-1 mt-2 text-dark text-center bg-light" id="titre">Amine Gallery</h3>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        
+        
+        
+        
+        
+       
+        <ul class="navbar-nav container-fluid">
+            <li class="nav-item col-sm-2">
+                <a class="navbar-brand" href="#">
+                <img src="..\Media\logo.png" alt="erreur" style="width:100px;height:40px;">
+                </a>
+            </li>
+            <li class="nav-item col-sm-2">
+                <a class="nav-link" href="..\Index.html">Home</a>
+              </li>
+          <li class="nav-item col-sm-2">
+            <a class="nav-link" href="Writers.html">Writers</a>
+          </li>
+          <li class="nav-item col-sm-2">
+            <a class="nav-link" href="Books.html">Books</a>
+          </li>
+        
+          <li class="nav-item col-sm-2">
+            <a class="nav-link" href="Inscription.html">Inscription</a>
+          </li>
+          <li class="nav-item col-sm-2">
+              <a class="nav-link" href="Media.html">
+                Media
+                </a>
+            </li>
+        </ul>
+      </nav>
+      <h2 class="display-4 text-center text-dark">Game of Balls</h2>
+      <div class="box1" ondragover="event.preventDefault();" >
+
+          <div class="ball" id="b1" draggable="true">10</div>
+          <div class="ball" id="b2" draggable="true">3</div>
+          <div class="ball" id="b3" draggable="true">7</div>
+          <div class="ball" id="b4" draggable="true">6</div>
+          <div class="ball" id="b5" draggable="true">1</div>
+          <div class="ball" id="b6" draggable="true">2</div>
+          <div class="ball" id="b7" draggable="true">12</div>
+          <div class="ball" id="b8" draggable="true" >4</div>
+          <div class="ball" id="b9" draggable="true">5</div>
+
+
+
+      </div>
+  <div class="box1" style="float:right" ondragover="event.preventDefault();" >
+
+  </div>
+  <h4 id="somme1" onmousemove="showsum(1)" onmouseout="unshowsum(1)">somme 1:</h4> 
+  <h4 id="somme2" onmousemove="showsum(2)" onmouseout="unshowsum(2)">somme 2:</h4> 
+  <hr>
+ 
+
+
+
+
+
+
+
+
+      <div class="containter-fluid bg-dark">
+        <p class="font-weight-light text-center text-light display-5">©Created By Amine Kaabi  </p>
+      </div>
+</body>
+<script src="dragdrop.js"></script>
+
+</html> 

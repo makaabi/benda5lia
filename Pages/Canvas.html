@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Canvas</title>
+<link href="..\Media\logo.png" rel="icon" />
+
+
+<link rel="stylesheet" href="..\dist/css/bootstrap.min.css" >
+<link rel="stylesheet" href="..\style.css" >
+
+<style>   
+canvas
+{
+  width:90%;
+  height: 600px;
+  border:2px black dashed;
+  background-color:grey;
+  margin-left:5%;
+}
+button
+{
+  margin-left:20%;
+}
+</style>
+</head>
+<body> 
+    <h3 class="display-4 py-1 mt-2 text-dark text-center bg-light" id="titre">Amine Gallery</h3>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        
+        
+        
+        
+        
+       
+        <ul class="navbar-nav container-fluid">
+            <li class="nav-item col-sm-2">
+                <a class="navbar-brand" href="#">
+                <img src="..\Media\logo.png" alt="erreur" style="width:100px;height:40px;">
+                </a>
+            </li>
+            <li class="nav-item col-sm-2">
+                <a class="nav-link" href="..\Index.html">Home</a>
+              </li>
+          <li class="nav-item col-sm-2">
+            <a class="nav-link" href="Writers.html">Writers</a>
+          </li>
+          <li class="nav-item col-sm-2">
+            <a class="nav-link" href="Books.html">Books</a>
+          </li>
+        
+          <li class="nav-item col-sm-2">
+            <a class="nav-link" href="Inscription.html">Inscription</a>
+          </li>
+          <li class="nav-item col-sm-2">
+              <a class="nav-link" href="Media.html">
+                Media
+                </a>
+            </li>
+        </ul>
+      </nav>
+      <h2 class="display-4 text-center text-light">Canvas Game</h2>
+      <canvas id="canvas">
+      </canvas>
+      <br/>
+      <button class="btn btn-success" id="start">Start</button>
+      Level:
+      <select id="level">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <div class="containter-fluid bg-dark">
+        <p class="font-weight-light text-center text-light display-5">©Created By Amine Kaabi  </p>
+      </div>
+</body>
+<script src="canvas.js"></script>
+
+</html> 

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Media</title>
+<link href="..\Media\logo.png" rel="icon" />
+
+<link rel="stylesheet" href="..\dist/css/bootstrap.min.css" >
+<link rel="stylesheet" href="..\style.css" >
+
+
+<!--Here api (map)-->
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+  type="text/javascript" charset="utf-8"></script>
+  <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+  type="text/javascript" charset="utf-8"></script>
+<!--Here api (map)-->
+
+
+</head>
+<body onLoad="creerBoutons()"> 
+    <h3 class="display-4 py-1 mt-2 text-dark text-center bg-light" id="titre">Amine Gallery</h3>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        
+        
+        
+        
+        
+       
+        <ul class="navbar-nav container-fluid">
+            <li class="nav-item col-sm-2">
+                <a class="navbar-brand" href="#">
+                <img src="..\Media\logo.png" alt="erreur" style="width:100px;height:40px;">
+                </a>
+            </li>
+            <li class="nav-item col-sm-2">
+                <a class="nav-link" href="..\Index.html">Home</a>
+              </li>
+          <li class="nav-item col-sm-2">
+            <a class="nav-link" href="Writers.html">Writers</a>
+          </li>
+          <li class="nav-item col-sm-2">
+            <a class="nav-link" href="Books.html">Books</a>
+          </li>
+        
+          <li class="nav-item col-sm-2">
+            <a class="nav-link" href="Inscription.html">Inscription</a>
+            <li class="nav-item col-sm-2">
+                <a class="nav-link" href="Media.html">
+                  Media
+                  </a>
+              </li>
+        </ul>
+      </nav>
+
+    
+
+
+
+          <div class="container text-muted border border-dark" >  
+              <div class="row">
+                  <div class="col-lg-8 border border-dark">
+                      <h2 id="mediatitle">Introducing AirPods Pro</h2>
+
+      <video id="mavideo" width="400" height="400" controls>
+        <source src="..\Media\airpod.mp4">
+         <p class="alert">
+         Votre navigateur ne supporte pas la balise vidéo ! Mettez-vous à jour !
+         </p>
+         </video>
+         
+        <div class="controles"id="d1">
+        </div>
+          <form name="f">
+             <label>Répeter : </label>
+             <input  id="rept" type="checkbox" onclick="repeter()"/> 
+             
+           </form>	
+                  </div>
+    
+                  <div class="col-lg-4 border border-dark">
+                    <h2>Bach - Suite No.1 </h2>
+                      <audio controls="controls" id="maaudio" >
+                      <source src="..\Media\Bach.mp3" type="audio/mp3"/>	  
+                     </audio>	  
+                     <div class="controles"id="d2">
+                      </div>
+                        <form name="f2">
+                           <label>Répeter : </label>
+                           <input  id="rept2" type="checkbox" onclick="repeter2()"/> 
+                           
+                         </form>	
+                         <button onclick="myLocation()" class="btn btn-danger">My Location</button>
+
+                         <div id="showloc"></div>
+                        <div id="ip"></div>
+                    <div id="address"></div>
+
+                     
+              </div>
+            </div>
+
+           <script src="Media.js"></script>
+       
+</body>
+</html> 

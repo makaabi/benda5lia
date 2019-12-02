@@ -1,0 +1,186 @@
+body
+{
+  background-color:#5d5d3c ;
+}
+
+#titre
+{
+  animation-name: opac;
+  animation-duration: 6s;
+  animation-iteration-count:infinite;
+
+}
+@keyframes opac {
+  0% {opacity:0;}
+  25% {opacity:0.25;}
+  50% {opacity:0.5;}
+  75% {opacity:0.75;}
+  100% {opacity:1;}
+}
+
+#titre
+{
+  animation-name: opac;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+
+}
+
+#Inscriptiondiv {
+  margin-left:350px;
+  background: white;
+  width: 600px;
+  height: 100px;
+  
+  
+  position: relative;
+  animation-name:cadre ;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+#appear
+{
+  position: relative;
+  animation-name: poptitle;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+
+
+}
+
+#appear2
+{
+  position: relative;
+  left:-600px;
+  animation-name: poptitle2;
+  animation-delay: 4s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+
+}
+@keyframes cadre {
+  0% {background-color: #ffffff; border-radius: 0 0 0 0;}
+  25% {background-color:#d7d7c1;  border-radius: 50% 0 0 0;}
+  50% {background-color: #8c8c5a border-radius: 50% 50% 0 0}
+  75% {background-color: #6d6d46;  border-radius: 50% 50% 50% 0;}
+  100% {background-color: #1f1f14; border-radius: 50% 50% 50% 50%;color:red}
+}
+
+@keyframes poptitle {
+
+  from{transform: translateX(-900px);}
+  to{transform: translateX(90px);}
+}
+
+@keyframes poptitle2 {
+
+  from{transform: translateX(-900px);}
+  to{transform: translateX(700px);}
+}
+
+.cardss
+{height:300px;width: 250px;}
+.cardss2
+{height:500px;width: 450px;}
+
+#mavideo{
+  -o-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; 
+   }
+#mavideo:hover, video:focus { width:600px; }	 
+#showloc{height:200px ;width: 350px;}
+
+
+.ball{
+  float:left;
+  width: 40px;
+  height: 40px;
+  background:blue;
+  color:whitesmoke;
+  text-align:center;
+  font-size: 0.75em;
+  padding-left:1px;
+  padding-top:8px;
+
+  border-radius: 50px;
+  margin:5px;
+
+}
+.box1,.box2
+{
+  display: inline-block;
+  height: 158px;
+  width: 158px;
+  border: solid 2px red;
+  margin: 10px;
+  background: white;
+}
+hr
+{
+  background-color: white;
+}
+
+
+
+#somme1
+{
+position: relative;
+margin-left: 10px;
+width:150px;
+
+
+}
+#somme2
+{
+position: relative;
+margin-left: 88%;
+width:150px;
+bottom: 30px;
+
+}
+
+/*drag and drop files*/
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 480px;
+  font-family: sans-serif;
+  margin: 100px auto;
+  padding: 20px;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+
+.my-form {
+  margin-bottom: 10px;
+}
+#gallery {
+  margin-top: 10px;
+}
+#gallery img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.button:hover {
+  background: #ddd;
+}
+#fileElem {
+  display: none;
+}
